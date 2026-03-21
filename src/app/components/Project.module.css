@@ -1,0 +1,26 @@
+.project_container {
+  position: relative;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  margin: 0 2rem 2rem 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 1.6rem;
+}
+
+.back_button {
+  color: red;
+  backgroiund-color: white;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+}
+
+.back_button:hover {
+  cursor: pointer;
+}
