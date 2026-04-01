@@ -19,14 +19,14 @@ export default function ContactPage() {
   //   );
   // }
 
-  function send() {
-    sendEmail();
-  }
+  // function send() {
+  //   sendEmail();
+  // }
 
   return (
     <div className={styles.contact_container}>
       <h2>Contact Page</h2>
-      <form action={send}>
+      <form action={sendEmail}>
         <div className={styles.form_group}>
           {" "}
           <label htmlFor="name">Name</label>
@@ -53,8 +53,8 @@ export default function ContactPage() {
           {" "}
           <label htmlFor="message">Message</label>
           <input
-            name="name"
-            id="name"
+            name="message"
+            id="message"
             type="text"
             placeholder="Your message..."
           ></input>
