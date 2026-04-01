@@ -5,8 +5,9 @@
   --foreground: #171717;
 }
 body {
-  /* font-family: var(--font-wenkai-mono); */
-  font-family: var(--font-caveat);
+  font-family: var(--font-wenkai-mono);
+  /* font-family: var(--font-caveat); */
+
   /* background-image: url("/home/richardefevre/personal/portfolio/public/grid.1.webp");
   background-repeat: no-repeat;
   background-attachment: fixed; */
