@@ -2,9 +2,7 @@ import styles from "./ContactPage.module.css";
 import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
-  function sendMail(event) {
-    event.preventDefault();
-
+  function sendMail() {
     let params = {
       name: document.getElementById("name"),
       email: document.getElementById("email"),
