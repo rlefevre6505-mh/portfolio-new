@@ -1,26 +1,32 @@
+"use client";
 import styles from "./ContactPage.module.css";
-import emailjs from "@emailjs/browser";
+import { sendEmail } from "@/lib/resend";
+// import emailjs, { send } from "@emailjs/browser";
 
 export default function ContactPage() {
-  function sendMail() {
-    let params = {
-      name: document.getElementById("name"),
-      email: document.getElementById("email"),
-      message: document.getElementById("message"),
-    };
+  // function sendMail() {
+  //   let params = {
+  //     name: name,
+  //     email: email,
+  //     message: document.getElementById("message"),
+  //   };
 
-    emailjs.send(
-      "service_qlmig7a",
-      "template_vfxpo0a",
-      params,
-      "pEFG2wlsFjk_FtDw_",
-    );
+  //   emailjs.send(
+  //     "service_qlmig7a",
+  //     "template_vfxpo0a",
+  //     params,
+  //     "pEFG2wlsFjk_FtDw_",
+  //   );
+  // }
+
+  function send() {
+    sendEmail();
   }
 
   return (
     <div className={styles.contact_container}>
       <h2>Contact Page</h2>
-      <form>
+      <form action={send}>
         <div className={styles.form_group}>
           {" "}
           <label htmlFor="name">Name</label>
@@ -45,9 +51,7 @@ export default function ContactPage() {
 
         <div className={styles.form_group}>
           {" "}
-          <label htmlFor="" name>
-            Message
-          </label>
+          <label htmlFor="message">Message</label>
           <input
             name="name"
             id="name"
@@ -55,8 +59,8 @@ export default function ContactPage() {
             placeholder="Your message..."
           ></input>
         </div>
-        <button type="submit" onClick={sendMail()} className="form_button">
-          Send Message
+        <button type="submit" className="form_button">
+          Send
         </button>
       </form>
     </div>
