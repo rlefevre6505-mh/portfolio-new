@@ -56,7 +56,7 @@ export default function ContactPage() {
           ></input>
         </div>
         <button type="submit" onClick={sendMail()} className="form_button">
-          Send
+          Send Message
         </button>
       </form>
     </div>
