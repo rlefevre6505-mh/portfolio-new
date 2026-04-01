@@ -26,6 +26,7 @@ export default function DietDine({ setProjectView }) {
         >
           Click to view{" "}
           <Image
+            className={styles.project_link}
             width={500}
             height={300}
             src="/diet_dine.jpg"

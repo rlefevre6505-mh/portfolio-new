@@ -26,6 +26,7 @@ export default function Cookies({ setProjectView }) {
         >
           Click to view{" "}
           <Image
+            className={styles.project_link}
             width={500}
             height={300}
             src="/cookies.jpg"

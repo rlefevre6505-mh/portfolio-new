@@ -7,6 +7,7 @@ import DietDine from "../components/DietDine";
 import Dogs from "../components/Dogs";
 import GigLog from "../components/GigLog";
 import Kickabout from "../components/Kickabout";
+import Stoneleaf from "../components/Stoneleaf";
 
 export default function ProjectsPage() {
   const [projectView, setProjectView] = useState("");
@@ -16,15 +17,40 @@ export default function ProjectsPage() {
       <div className={styles.project_container}>
         <div className={styles.project}>
           <div className={styles.project_text}>
+            <h3 className={styles.project_title}>Stoneleaf Furnishings</h3>
+            <p className={styles.project_blurb}>
+              A front-end e-commerce storefront with custom payment server,
+              built with Vite + React, Node.JS + Express, and Stripe checkout.
+              Designed to be fast and scalable, this app recreates a real-world
+              transactional flow, handles payemnts securely and demostrates
+              ability to create production-ready web apps.
+            </p>
+          </div>
+          <div
+            className={styles.link}
+            onClick={() => {
+              setProjectView("stoneleaf");
+            }}
+          >
+            View details{" "}
+            <Image
+              width={500}
+              height={300}
+              src="/stoneleaf.jpg"
+              alt="a screenshot of the kickabout app"
+            />
+          </div>
+        </div>
+
+        <div className={styles.project}>
+          <div className={styles.project_text}>
             <h3 className={styles.project_title}>Kickabout</h3>
             <p className={styles.project_blurb}>
-              A full stack app designed to help people with connect with other
-              users to play sports on a purely casual level. The app is built in
-              Next.JS using a PostgreSQL database with authentication by Clerk.
-              This app was the outcome of a group project with Amy Tuck, Tom
-              Stevenson & Sinéad McIntyre, and fulfilled the brief of providing
-              a minimum viable product, ready for presentation as proof of
-              concept.
+              A full stack app created for a group bootcamp project and built
+              with Vite + Next.JS, Node.JS + Express, and using a PostgreSQL
+              database on Supabase. Designed to help users connect with each
+              other to play sports on a purely casual level, wih
+              preference-based match-making.
             </p>
           </div>
           <div
@@ -33,7 +59,7 @@ export default function ProjectsPage() {
               setProjectView("kickabout");
             }}
           >
-            Click to view{" "}
+            View details{" "}
             <Image
               width={500}
               height={300}
@@ -63,7 +89,7 @@ export default function ProjectsPage() {
               setProjectView("dietdine");
             }}
           >
-            Click to view
+            View details
             <Image
               src="/diet_dine.jpg"
               alt="a screenshot of the diet dine app"
@@ -92,7 +118,7 @@ export default function ProjectsPage() {
               setProjectView("giglog");
             }}
           >
-            Click to view
+            View details
             <Image
               width={500}
               height={300}
@@ -124,7 +150,7 @@ export default function ProjectsPage() {
               setProjectView("dogs");
             }}
           >
-            Click to view
+            View details
             <Image
               width={500}
               height={300}
@@ -154,7 +180,7 @@ export default function ProjectsPage() {
               setProjectView("cookies");
             }}
           >
-            Click to view
+            View details
             <Image
               width={500}
               height={300}
@@ -177,5 +203,7 @@ export default function ProjectsPage() {
     return <Dogs setProjectView={setProjectView} />;
   } else if (projectView === "cookies") {
     return <Cookies setProjectView={setProjectView} />;
+  } else if (projectView === "stoneleaf") {
+    return <Stoneleaf setProjectView={setProjectView} />;
   }
 }

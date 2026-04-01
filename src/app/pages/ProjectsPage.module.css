@@ -16,7 +16,7 @@
 }
 
 .project {
-  padding: 0 4rem 0 2rem;
+  padding: 2rem;
   margin: auto;
   margin-bottom: 2rem;
   display: flex;
@@ -24,8 +24,22 @@
   background: whitesmoke;
   border-radius: 8px;
   width: 90%;
+  .link {
+    margin-top: 1.6rem;
+    text-align: center;
+  }
+  img {
+    margin-top: 0.4rem;
+  }
 }
 
 .link:hover {
   cursor: pointer;
+}
+
+.project_title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
 }

@@ -26,6 +26,7 @@ export default function GigLog({ setProjectView }) {
         >
           Click to view{" "}
           <Image
+            className={styles.project_link}
             width={500}
             height={300}
             src="/gig_log.jpg"

@@ -26,6 +26,7 @@ export default function Dogs({ setProjectView }) {
         >
           Click to view{" "}
           <Image
+            className={styles.project_link}
             width={500}
             height={300}
             src="/dogs.jpg"
