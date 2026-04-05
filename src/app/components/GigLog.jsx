@@ -20,17 +20,18 @@ export default function GigLog({ setProjectView }) {
           </p>
         </div>
         <a
-          href="https://kickaboutapp.vercel.app/"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
+          className={styles.project_link}
         >
-          Click to view{" "}
+          Click to visit{" "}
           <Image
             className={styles.project_link}
             width={500}
             height={300}
-            src="/gig_log.jpg"
-            alt="a screenshot of the kickabout app"
+            src="/giglog.jpg"
+            alt="a screenshot of the giglog app"
           />
         </a>
       </div>

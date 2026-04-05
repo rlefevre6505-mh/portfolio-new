@@ -14,8 +14,10 @@ export default function Home() {
       <Image
         src="/desktopedit.jpg"
         alt="a grid background"
-        width={500}
-        height={300}
+        fill
+        priority
+        // width={500}
+        // height={300}
         className={styles.bg}
       />
       <Image
@@ -55,6 +57,7 @@ export default function Home() {
 
       <nav className={styles.nav}>
         <button
+          className={styles.nav_link}
           onClick={() => {
             setView("about");
           }}
@@ -63,6 +66,7 @@ export default function Home() {
         </button>
 
         <button
+          className={styles.nav_link}
           onClick={() => {
             setView("projects");
           }}
@@ -71,6 +75,7 @@ export default function Home() {
         </button>
 
         <button
+          className={styles.nav_link}
           onClick={() => {
             setView("contact");
           }}

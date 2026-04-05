@@ -7,5 +7,50 @@
   margin: 0 2rem 2rem 0;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.7);
-  padding-top: 1.6rem;
+  padding-top: 2rem;
+}
+
+.contact_h2 {
+  margin: 0 auto 1.6rem auto;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 80%;
+}
+
+.contact_p {
+  margin: 0 auto 2rem auto;
+  width: 80%;
+}
+
+.contact_form {
+  width: 80%;
+  margin: auto;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+
+.message {
+  height: 20ch;
+}
+
+.input {
+  background-color: whitesmoke;
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+}
+
+.form_button {
+  display: block;
+  margin: 2rem auto 2.4rem auto;
+  background-color: whitesmoke;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+}
+
+.linkedin_link:hover {
+  cursor: pointer;
 }

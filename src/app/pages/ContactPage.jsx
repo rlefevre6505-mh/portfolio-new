@@ -1,40 +1,37 @@
 "use client";
 import styles from "./ContactPage.module.css";
 import { sendEmail } from "@/lib/resend";
-// import emailjs, { send } from "@emailjs/browser";
 
 export default function ContactPage() {
-  // function sendMail() {
-  //   let params = {
-  //     name: name,
-  //     email: email,
-  //     message: document.getElementById("message"),
-  //   };
-
-  //   emailjs.send(
-  //     "service_qlmig7a",
-  //     "template_vfxpo0a",
-  //     params,
-  //     "pEFG2wlsFjk_FtDw_",
-  //   );
-  // }
-
-  // function send() {
-  //   sendEmail();
-  // }
-
   return (
     <div className={styles.contact_container}>
-      <h2>Contact Page</h2>
-      <form action={sendEmail}>
+      <h2 className={styles.contact_h2}>
+        Please send me a message using the form below or connect with me on{" "}
+        <a
+          className={styles.linkedin_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/r-le-fevre/"
+        >
+          Linkedin
+        </a>
+        .
+      </h2>
+      <p className={styles.contact_p}>
+        You are more than welcome to ask questions about my work, request my CV
+        or get in touch for any other reason.
+      </p>
+      <form className={styles.contact_form} action={sendEmail}>
         <div className={styles.form_group}>
           {" "}
           <label htmlFor="name">Name</label>
           <input
+            className={styles.input}
             name="name"
             id="name"
             type="text"
             placeholder="Your name"
+            required
           ></input>
         </div>
 
@@ -42,24 +39,28 @@ export default function ContactPage() {
           {" "}
           <label htmlFor="email">Email</label>
           <input
+            className={styles.input}
             name="email"
             id="email"
             type="email"
             placeholder="Your email address"
+            required
           ></input>
         </div>
 
         <div className={styles.form_group}>
           {" "}
           <label htmlFor="message">Message</label>
-          <input
+          <textarea
             name="message"
             id="message"
+            className={`${styles.message} ${styles.input}`}
             type="text"
             placeholder="Your message..."
-          ></input>
+            required
+          ></textarea>
         </div>
-        <button type="submit" className="form_button">
+        <button type="submit" className={styles.form_button}>
           Send
         </button>
       </form>

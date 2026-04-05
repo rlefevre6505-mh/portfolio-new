@@ -9,3 +9,67 @@
   background: rgba(255, 255, 255, 0.7);
   padding-top: 1.6rem;
 }
+
+.stack_icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto 2.4rem auto;
+  gap: 2rem;
+  width: 80%;
+}
+
+.stack_icon {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.tooltip_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip_wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about_div {
+  padding: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  /* margin: 2rem; */
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  border-radius: 8px;
+  width: 90%;
+
+  h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    margin: 0 0.4rem 2rem 0.4rem;
+  }
+}

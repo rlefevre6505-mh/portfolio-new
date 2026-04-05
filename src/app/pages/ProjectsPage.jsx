@@ -77,11 +77,8 @@ export default function ProjectsPage() {
             preferences find restaurants and other food vendors suitable for
             them, primarily via user feedback. The app is built in HTML, CSS and
             Javascript and makes use of the OpenSteetMap API as well as a
-            postgreSQL database and custom server API. The layout is intended to
-            mimic a single page app. This app was the outcome of a group project
-            with Amy Tuck and Ulrike Kunze, and fulfilled the brief of providing
-            a minimum viable product, ready for presentation as proof of
-            concept.
+            postgreSQL database and custom server API built with Node.JS and
+            Express.
           </p>
           <div
             className={styles.link}
@@ -127,7 +124,7 @@ export default function ProjectsPage() {
             />
           </div>
         </div>
-
+        {/* 
         <div className={styles.project}>
           <div className={styles.project_text}>
             <h3 className={styles.project_title}>Daily Dose Of Dogs</h3>
@@ -158,9 +155,9 @@ export default function ProjectsPage() {
               alt="a screenshot of a dog photo app"
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.project}>
+        {/* <div className={styles.project}>
           <div className={styles.project_text}>
             <h3 className={styles.project_title}>Cookies In Space</h3>
             <p className={styles.project_blurb}>
@@ -188,7 +185,7 @@ export default function ProjectsPage() {
               alt="a screenshot of a cookie clicker idle game"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     );
 

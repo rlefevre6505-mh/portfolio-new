@@ -102,7 +102,7 @@ export default function Stoneleaf({ setProjectView }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Click to view{" "}
+          Click to visit{" "}
           <Image
             width={500}
             height={300}

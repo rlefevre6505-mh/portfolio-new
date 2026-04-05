@@ -19,11 +19,7 @@ export default function Dogs({ setProjectView }) {
             A full stack app designed to help people with connect with other
           </p>
         </div>
-        <a
-          href="https://kickaboutapp.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="" target="_blank" rel="noopener noreferrer">
           Click to view{" "}
           <Image
             className={styles.project_link}
