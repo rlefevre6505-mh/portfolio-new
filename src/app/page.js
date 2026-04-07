@@ -13,8 +13,8 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.bgWrapper}>
         <Image
-          src="/desktopedit.jpg"
-          alt="a grid background"
+          src="/desktopedit.webp"
+          alt="a photo of a desk top with a laptop and cup of tea"
           fill
           priority
           // width={500}
