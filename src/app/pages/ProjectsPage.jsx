@@ -37,7 +37,7 @@ export default function ProjectsPage() {
               width={500}
               height={300}
               src="/stoneleaf.jpg"
-              alt="a screenshot of the kickabout app"
+              alt="a screenshot of the stoneleaf furnishings website"
             />
           </div>
         </div>
