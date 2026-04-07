@@ -20,7 +20,7 @@ export default function GigLog({ setProjectView }) {
           </p>
         </div>
         <a
-          href=""
+          href="https://gig-log-social.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.project_link}
