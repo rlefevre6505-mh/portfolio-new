@@ -96,7 +96,7 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        <div className={styles.project}>
+        {/* <div className={styles.project}>
           <div className={styles.project_text}>
             <h3 className={styles.project_title}>Gig Log</h3>
             <p className={styles.project_blurb}>
@@ -123,7 +123,8 @@ export default function ProjectsPage() {
               alt="a screenshot of the gig log social networking site"
             />
           </div>
-        </div>
+        </div> */}
+
         {/* 
         <div className={styles.project}>
           <div className={styles.project_text}>

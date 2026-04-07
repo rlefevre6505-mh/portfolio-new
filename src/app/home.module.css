@@ -120,14 +120,19 @@ body {
 .nav_link {
   padding: 0.4rem 1.6rem;
   background-color: white;
-  /* border: 2px red solid; */
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: 500;
+  /* border-bottom: 2px solid grey; */
 }
 
 .nav_link:hover {
   cursor: pointer;
+}
+
+.nav_link_active {
+  font-weight: 600;
+  border-bottom: none;
 }
 
 /* .nav_link_active {

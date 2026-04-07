@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <div className={styles.about_container}>
       <div className={styles.about_div}>
-        <h2>About Me</h2>
+        {/* <h2>About Me</h2> */}
 
         <p>
           <strong>My Tech Stack</strong>
@@ -64,15 +64,15 @@ export default function AboutPage() {
         <p>
           I&apos;ve always enjoyed technology and had an interest in computing,
           from re-soldering the internals of a broken hand-held games console at
-          the age of 12 to learning about binary and ASCII out of curiosity. I
+          the age of 12, to learning about binary and ASCII out of curiosity. I
           think creativity and problem solving have always been among the things
           that automatically appeal to me, and that played a big part in
           latching on to development once I started dabbling in the basics
           through FreeCodeCamp. About a year after taking these first steps,
           when the opportunity to join the Tech Educators Software Development
           Bootcamp came along and I finally decided I was no longer happy
-          continuing in my management career, I made the decision to to go for
-          it and haven&apos;t looked back! Having since graduated with a
+          continuing in my management career, I made the decision to go for it
+          and haven&apos;t looked back! Having since graduated with a
           distinction from the foundation degree equivalent bootcamp, I am now
           actively seeking my first role in the field, while working on projects
           and continuing to expand into new languages and frameworks.

@@ -60,7 +60,7 @@ export default function Home() {
 
       <nav className={styles.nav}>
         <button
-          className={styles.nav_link}
+          className={`${styles.nav_link} ${view === "about" ? styles.nav_link_active : ""}`}
           onClick={() => {
             setView("about");
           }}
@@ -69,7 +69,7 @@ export default function Home() {
         </button>
 
         <button
-          className={styles.nav_link}
+          className={`${styles.nav_link} ${view === "projects" ? styles.nav_link_active : ""}`}
           onClick={() => {
             setView("projects");
           }}
@@ -78,7 +78,7 @@ export default function Home() {
         </button>
 
         <button
-          className={styles.nav_link}
+          className={`${styles.nav_link} ${view === "contact" ? styles.nav_link_active : ""}`}
           onClick={() => {
             setView("contact");
           }}

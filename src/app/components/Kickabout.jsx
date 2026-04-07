@@ -25,18 +25,17 @@ export default function Kickabout({ setProjectView }) {
               proof of concept.
             </strong>
           </p>
-
           <p className={styles.project_blurb}>
             <strong>Project Planning</strong> - The project group began our
             planning by identifying a problem domain and generating user stories
             for the essential aspects of the app, before further researching
-            other comparible apps. Notetaking was compiled in a Figjam board on
+            other comparable apps. Notetaking was compiled in a Figjam board on
             Figma, with low fidelity wireframes, user-flow diagrams and a
             routing structure later added to the same board. The database schema
             was planned using drawsql.app and high fidelity wireframes were
             created in figma. Using an agile workflow, the group set up a kanban
             board on Trello, using this to structure and track our work in
-            combination with multiple with daily standup meetings.
+            combination with multiple daily standup meetings.
             <ul className={styles.project_list}>
               Our user stories were:
               <li className={styles.li}>
@@ -60,18 +59,16 @@ export default function Kickabout({ setProjectView }) {
               </li>
             </ul>{" "}
           </p>
-
           <p className={styles.project_blurb}>
             <strong>Authentication & Onboarding</strong> - Once on the landing
             page, users are able to sign up or sign in using Clerk
-            authtnication. It was decided early on that users would be guided
+            authentication. It was decided early on that users would be guided
             through a custom onboarding flow, integrating Clerk sign up with
             forms to be completed by the user for the app&apos;s own database.
             With use of Clerk&apos;s &quot;route-matcher&quot;, protected routes
             could be created and configured so that users would be unable to
             access the app without being signed up.
           </p>
-
           <p className={styles.project_blurb}>
             <strong>Matchmaking</strong> - User matching is achieved by taking
             data on user&apos;s preferred locations and sports from the
@@ -82,19 +79,18 @@ export default function Kickabout({ setProjectView }) {
             after data fetching, it was a clear choice to set up a more complex
             SQL query to limit the need for clientside processing. This was
             achieved using a query comprising of 2 CTEs (each from a multi-level
-            nested query), with one then filtered base don the ocntent of the
+            nested query), with one then filtered based on the content of the
             other and returning only the relevant data.
             {/* db seeding */}
           </p>
-
           <p className={styles.project_blurb}>
             <strong>Stretch Goals</strong> -
             <ul className={styles.project_list}>
               {" "}
               The group had high ambitions for this concept, despite a tight
               timeline for development of this first version, so had several
-              stretch goals we hoped to work on if time allowed. Our strech user
-              stories were:
+              stretch goals we hoped to work on if time allowed. Our stretch
+              user stories were:
               <li className={styles.li}>Implement messaging between users.</li>
               <li className={styles.li}>
                 Implement true location based matching and mapping features such
@@ -107,30 +103,32 @@ export default function Kickabout({ setProjectView }) {
               </li>
             </ul>
           </p>
-
           <p className={styles.project_blurb}>
             <strong>Development Notes</strong> - My role in this project, as
             with all group members, covered many aspects of development. I took
             a lead role in setting up authentication and designing the custom
             onboarding flow, as well as guiding user flow through the whole app.
             I designed the database schema based on the needs of the project, as
-            defined collaboratively by whole group, and set up the database. I
-            also tackled the complex SQL query thatn handles automated matching
-            of users. I volunteered to take this on mainly becuase I had been
+            defined collaboratively by whole group, and set up the database.
+          </p>
+
+          <p className={styles.project_blurb}>
+            I also tackled the complex SQL query that handles automated matching
+            of users. I volunteered to take this on mainly because I had been
             conscious that my SQL skills were not as advanced as they could be
             and had recently been working to improve, so wanted to challenge
-            myself. I also became the go-to debugger of the group, as I not only
-            made myself available for this, but found that I was able to work
+            myself. I fell into the role of go-to debugger, as I not only made
+            myself readily available for this, but found that I was able to work
             well in this capacity with my group, making good use of my
-            communication and coaching skills, combined wiht a collaborative
+            communication and coaching skills, combined with a collaborative
             attitude.
           </p>
           <p className={styles.project_blurb}>
             As a group we were pleased with how this MVP for the app concept
-            turned out, although all felt some measure of dissapointment over
+            turned out, although all felt some measure of disappointment over
             not having time to implement some of our stretch stories. For my
             part, I particularly enjoyed handling the database and SQL queries,
-            and overall really enjoyed the oportunity to develop as part of a
+            and overall really enjoyed the opportunity to develop as part of a
             team.
           </p>
         </div>
