@@ -7,7 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
 export default function Home() {
-  const [view, setView] = useState("projects");
+  const [view, setView] = useState("about");
 
   return (
     <main className={styles.main}>
