@@ -11,22 +11,25 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Image
-        src="/desktopedit.jpg"
-        alt="a grid background"
-        fill
-        priority
-        // width={500}
-        // height={300}
-        className={styles.bg}
-      />
-      <Image
+      <div className={styles.bgWrapper}>
+        <Image
+          src="/desktopedit.jpg"
+          alt="a grid background"
+          fill
+          priority
+          // width={500}
+          // height={300}
+          className={styles.bg}
+        />
+      </div>
+
+      {/* <Image
         src="/notepad.png"
         alt="A notepad"
         width={500}
         height={300}
         className={styles.notepad}
-      />
+      /> */}
       <div className={styles.profile}>
         <div className={styles.profile_intro}>
           <Image
