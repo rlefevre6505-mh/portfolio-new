@@ -37,6 +37,28 @@ export default function Kickabout({ setProjectView }) {
             created in figma. Using an agile workflow, the group set up a kanban
             board on Trello, using this to structure and track our work in
             combination with multiple with daily standup meetings.
+            <ul className={styles.project_list}>
+              Our user stories were:
+              <li className={styles.li}>
+                As a user i want to be able to find other people in my area who
+                are interested in the same activities as me (at a
+                casual/beginner level)
+              </li>
+              <li className={styles.li}>
+                As a user I want to be matched with people based on activity,
+                activity level and location
+              </li>
+              <li className={styles.li}>
+                As a user, when I sign up I want to create a profile including
+                my location, what activities I&apos;m interested in and my
+                preferred level for each activity
+              </li>
+              <li>As a user I want to be able to edit my profile later</li>
+              <li className={styles.li}>
+                As a dev I want to start with a pre-set list of activities for
+                users to choose from
+              </li>
+            </ul>{" "}
           </p>
 
           <p className={styles.project_blurb}>
@@ -67,10 +89,49 @@ export default function Kickabout({ setProjectView }) {
 
           <p className={styles.project_blurb}>
             <strong>Stretch Goals</strong> -
+            <ul className={styles.project_list}>
+              {" "}
+              The group had high ambitions for this concept, despite a tight
+              timeline for development of this first version, so had several
+              stretch goals we hoped to work on if time allowed. Our strech user
+              stories were:
+              <li className={styles.li}>Implement messaging between users.</li>
+              <li className={styles.li}>
+                Implement true location based matching and mapping features such
+                as recommended safe locations.
+              </li>
+              <li className={styles.li}>Allow users to set up group events.</li>
+              <li className={styles.li}>Add user stats to profile pages.</li>
+              <li className={styles.li}>
+                Allowing users to add new/custom activity types.
+              </li>
+            </ul>
           </p>
 
           <p className={styles.project_blurb}>
-            <strong>Development Notes</strong> - my role - sql - auth
+            <strong>Development Notes</strong> - My role in this project, as
+            with all group members, covered many aspects of development. I took
+            a lead role in setting up authentication and designing the custom
+            onboarding flow, as well as guiding user flow through the whole app.
+            I designed the database schema based on the needs of the project, as
+            defined collaboratively by whole group, and set up the database. I
+            also tackled the complex SQL query thatn handles automated matching
+            of users. I volunteered to take this on mainly becuase I had been
+            conscious that my SQL skills were not as advanced as they could be
+            and had recently been working to improve, so wanted to challenge
+            myself. I also became the go-to debugger of the group, as I not only
+            made myself available for this, but found that I was able to work
+            well in this capacity with my group, making good use of my
+            communication and coaching skills, combined wiht a collaborative
+            attitude.
+          </p>
+          <p className={styles.project_blurb}>
+            As a group we were pleased with how this MVP for the app concept
+            turned out, although all felt some measure of dissapointment over
+            not having time to implement some of our stretch stories. For my
+            part, I particularly enjoyed handling the database and SQL queries,
+            and overall really enjoyed the oportunity to develop as part of a
+            team.
           </p>
         </div>
         <a
