@@ -5,12 +5,14 @@ import { useState } from "react";
 import ProjectsPage from "./pages/ProjectsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   const [view, setView] = useState("about");
 
   return (
     <main className={styles.main}>
+      <Analytics />
       <div className={styles.bgWrapper}>
         <Image
           src="/desktopedit.webp"
