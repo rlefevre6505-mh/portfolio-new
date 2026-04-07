@@ -54,3 +54,13 @@
 .linkedin_link:hover {
   cursor: pointer;
 }
+
+@media (width < 800px) {
+  .contact_container {
+    max-height: 85vh;
+    width: 90vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto 2vh auto;
+  }
+}

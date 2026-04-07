@@ -43,3 +43,13 @@
   font-weight: 600;
   margin-bottom: 1.6rem;
 }
+
+@media (width < 800px) {
+  .project_container {
+    max-height: 85vh;
+    width: 90vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto 2vh auto;
+  }
+}
