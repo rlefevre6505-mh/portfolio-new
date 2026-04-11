@@ -49,8 +49,8 @@ export default function AboutPage() {
             <span className={styles.tooltip}>PostgreSQL</span>
           </div>
           <div className={styles.tooltip_wrapper}>
-            <StackIcon name="mysql" className={styles.stack_icon} />
-            <span className={styles.tooltip}>MySQL</span>
+            <StackIcon name="sqlite" className={styles.stack_icon} />
+            <span className={styles.tooltip}>SQLite</span>
           </div>
           <div className={styles.tooltip_wrapper}>
             <StackIcon name="nodejs" className={styles.stack_icon} />
