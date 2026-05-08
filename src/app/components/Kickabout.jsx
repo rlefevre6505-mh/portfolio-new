@@ -17,8 +17,8 @@ export default function Kickabout({ setProjectView }) {
           <h3 className={styles.project_title}>Kickabout</h3>
           <p className={styles.project_blurb}>
             <strong>
-              A full stack app designed to help people connect with other. The
-              app is built in Next.JS using a PostgreSQL database with
+              A full stack app designed to help people connect with each other.
+              The app is built in Next.JS using a PostgreSQL database with
               authentication by Clerk. This app was the outcome of a group
               project with Amy Tuck, Tom Stevenson and Sinéad McIntyre, and
               fulfilled the brief of providing a minimum viable product as a
