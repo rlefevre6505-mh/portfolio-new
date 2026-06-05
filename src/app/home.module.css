@@ -290,6 +290,7 @@ body {
   .profile {
     width: 90%;
     transform: translateX(0);
+    margin: auto;
 
     .profile_blurb {
       max-width: 60ch;
