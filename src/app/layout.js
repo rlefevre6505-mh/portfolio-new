@@ -1,30 +1,10 @@
-import {
-  Geist,
-  Geist_Mono,
-  Caveat,
-  LXGW_WenKai_Mono_TC,
-} from "next/font/google";
+import { LXGW_WenKai_Mono_TC } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const wenkaiMono = LXGW_WenKai_Mono_TC({
   variable: "--font-wenkai-mono",
   subsets: ["latin"],
   weight: ["400"],
-});
-
-const caveat = Caveat({
-  variable: "--font-caveat",
-  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -35,9 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${wenkaiMono.variable} ${caveat.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${wenkaiMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }
