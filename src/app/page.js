@@ -9,9 +9,12 @@ import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   const [view, setView] = useState("about");
+  const [profileHidden, setProfileHidden] = useState(false);
 
   return (
-    <main className={styles.main}>
+    <main
+      className={`${styles.main} ${profileHidden ? styles.profileHidden : ""}`}
+    >
       <Analytics />
       <div className={styles.bgWrapper}>
         <Image
@@ -32,30 +35,39 @@ export default function Home() {
         height={300}
         className={styles.notepad}
       /> */}
-      <div className={styles.profile}>
-        <div className={styles.profile_intro}>
-          <Image
-            src="/sketch.png"
-            alt="A charcoal sketch of myself"
-            width={500}
-            height={300}
-            className={styles.sketch}
-          />
-          <div className={styles.intro_text}>
-            <h2>Hello World!</h2>
-            <h3>
-              I&apos;m Richard, a front-end leaning, full-stack developer.
-            </h3>
+      <div className={styles.profileWrapper}>
+        <div className={styles.profile}>
+          <div className={styles.profile_intro}>
+            <Image
+              src="/sketch.png"
+              alt="A charcoal sketch of myself"
+              width={500}
+              height={300}
+              className={styles.sketch}
+            />
+            <div className={styles.intro_text}>
+              <h2>Hello World!</h2>
+              <h3>
+                I&apos;m Richard, a front-end leaning, full-stack developer.
+              </h3>
+            </div>
           </div>
+          <p className={styles.profile_blurb}>
+            I&apos;m someone who loves translating problems into solutions by
+            combining clean, effective code with user-friendly design
+            implementation. I&apos;m Currently focussed on building functional
+            and performant web apps from the ground up, and expanding into new
+            languages and frameworks. I&apos;m mostly working solo, but love
+            developing as part of a team!
+          </p>
         </div>
-        <p className={styles.profile_blurb}>
-          I&apos;m someone who loves translating problems into solutions by
-          combining clean, effective code with user-friendly design
-          implementation. I&apos;m Currently focussed on building functional and
-          performant web apps from the ground up, and expanding into new
-          languages and frameworks. I&apos;m mostly working solo, but love
-          developing as part of a team!
-        </p>
+        <button
+          type="button"
+          className={styles.toggleProfileButton}
+          onClick={() => setProfileHidden((prev) => !prev)}
+        >
+          {profileHidden ? "Show" : "Hide"}
+        </button>
       </div>
 
       {/* NAV */}
@@ -89,9 +101,11 @@ export default function Home() {
         </button>
       </nav>
 
-      {view === "projects" && <ProjectsPage />}
-      {view === "about" && <AboutPage />}
-      {view === "contact" && <ContactPage />}
+      <div className={styles.contentWrapper}>
+        {view === "projects" && <ProjectsPage />}
+        {view === "about" && <AboutPage />}
+        {view === "contact" && <ContactPage />}
+      </div>
     </main>
   );
 }
