@@ -105,10 +105,12 @@ export default function AboutPage() {
           <strong>My Current & Upcoming Projects</strong>
         </p>
         <p>
-          At the time of writing, I am currently nearing completion of my
-          ecommerce site built in React and now looking ahead to my next
-          project, a full stack app with a Laravel back end and React front end,
-          using Typescript for the first time in a fully fledged project.
+          At the time of writing, I am nearing completion of a project for a UK
+          company, creating a logistics planning tool that allows planning of
+          events, allocation of vehicles and equipment to events, and includes
+          predictive warnings that flag any clashes between events or equipment
+          shortages. This is built in React with TypeScript and Redux, Node.js
+          with Express, and PostgreSQL.
         </p>
       </div>
     </div>
