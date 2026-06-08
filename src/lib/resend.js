@@ -9,7 +9,8 @@ export const sendEmail = async (FormData) => {
 
   await resend.emails.send({
     to: process.env.MY_EMAIL,
-    from: `${name} <tomtheshopsupport@gmail.com>`,
+
+    from: `${name} <onboarding@resend.dev>`,
     subject: `New PORTFOLIO message from ${name}`,
     html: `
       <p><strong>Name:</strong> ${name}</p>
