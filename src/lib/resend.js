@@ -9,8 +9,7 @@ export const sendEmail = async (FormData) => {
 
   await resend.emails.send({
     to: process.env.MY_EMAIL,
-
-    from: `${name} <onboarding@resend.dev>`,
+    from: `${process.env.CUSTOM_DOMAIN}`,
     subject: `New PORTFOLIO message from ${name}`,
     html: `
       <p><strong>Name:</strong> ${name}</p>
