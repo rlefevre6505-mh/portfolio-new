@@ -48,17 +48,18 @@ export default function Home() {
             <div className={styles.intro_text}>
               <h2>Hello World!</h2>
               <h3>
-                I&apos;m Richard, a front-end leaning, full-stack developer.
+                I&apos;m Richard, a <br />
+                full-stack developer.
               </h3>
             </div>
           </div>
           <p className={styles.profile_blurb}>
             I&apos;m someone who loves translating problems into solutions by
-            combining clean, effective code with user-friendly design
-            implementation. I&apos;m Currently focussed on building functional
-            and performant web apps from the ground up, and expanding into new
-            languages and frameworks. I&apos;m mostly working solo, but love
-            developing as part of a team!
+            combining intuitive, user-friendly interfaces with clean,
+            maintainable code. I&apos;m Currently focussed on building
+            functional and performant web apps from the ground up, and expanding
+            into new languages and frameworks. I&apos;m mostly working solo, but
+            enjoy developing in Agile teams!
           </p>
         </div>
         <button

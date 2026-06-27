@@ -35,30 +35,30 @@ export default function Kickabout({ setProjectView }) {
             was planned using drawsql.app and high fidelity wireframes were
             created in figma. Using an agile workflow, the group set up a kanban
             board on Trello, using this to structure and track our work in
-            combination with multiple daily standup meetings.
-            <ul className={styles.project_list}>
-              Our user stories were:
-              <li className={styles.li}>
-                As a user i want to be able to find other people in my area who
-                are interested in the same activities as me (at a
-                casual/beginner level)
-              </li>
-              <li className={styles.li}>
-                As a user I want to be matched with people based on activity,
-                activity level and location
-              </li>
-              <li className={styles.li}>
-                As a user, when I sign up I want to create a profile including
-                my location, what activities I&apos;m interested in and my
-                preferred level for each activity
-              </li>
-              <li>As a user I want to be able to edit my profile later</li>
-              <li className={styles.li}>
-                As a dev I want to start with a pre-set list of activities for
-                users to choose from
-              </li>
-            </ul>{" "}
+            combination with multiple daily standup meetings.{" "}
           </p>
+          <ul className={styles.project_list}>
+            Our user stories were:
+            <li className={styles.li}>
+              As a user i want to be able to find other people in my area who
+              are interested in the same activities as me (at a casual/beginner
+              level)
+            </li>
+            <li className={styles.li}>
+              As a user I want to be matched with people based on activity,
+              activity level and location
+            </li>
+            <li className={styles.li}>
+              As a user, when I sign up I want to create a profile including my
+              location, what activities I&apos;m interested in and my preferred
+              level for each activity
+            </li>
+            <li>As a user I want to be able to edit my profile later</li>
+            <li className={styles.li}>
+              As a dev I want to start with a pre-set list of activities for
+              users to choose from
+            </li>
+          </ul>{" "}
           <p className={styles.project_blurb}>
             <strong>Authentication & Onboarding</strong> - Once on the landing
             page, users are able to sign up or sign in using Clerk
@@ -84,25 +84,25 @@ export default function Kickabout({ setProjectView }) {
             {/* db seeding */}
           </p>
           <p className={styles.project_blurb}>
-            <strong>Stretch Goals</strong> -
-            <ul className={styles.project_list}>
-              {" "}
-              The group had high ambitions for this concept, despite a tight
-              timeline for development of this first version, so had several
-              stretch goals we hoped to work on if time allowed. Our stretch
-              user stories were:
-              <li className={styles.li}>Implement messaging between users.</li>
-              <li className={styles.li}>
-                Implement true location based matching and mapping features such
-                as recommended safe locations.
-              </li>
-              <li className={styles.li}>Allow users to set up group events.</li>
-              <li className={styles.li}>Add user stats to profile pages.</li>
-              <li className={styles.li}>
-                Allowing users to add new/custom activity types.
-              </li>
-            </ul>
+            <strong>Stretch Goals</strong> -{" "}
           </p>
+          <ul className={styles.project_list}>
+            {" "}
+            The group had high ambitions for this concept, despite a tight
+            timeline for development of this first version, so had several
+            stretch goals we hoped to work on if time allowed. Our stretch user
+            stories were:
+            <li className={styles.li}>Implement messaging between users.</li>
+            <li className={styles.li}>
+              Implement true location based matching and mapping features such
+              as recommended safe locations.
+            </li>
+            <li className={styles.li}>Allow users to set up group events.</li>
+            <li className={styles.li}>Add user stats to profile pages.</li>
+            <li className={styles.li}>
+              Allowing users to add new/custom activity types.
+            </li>
+          </ul>
           <p className={styles.project_blurb}>
             <strong>Development Notes</strong> - My role in this project, as
             with all group members, covered many aspects of development. I took
@@ -111,7 +111,6 @@ export default function Kickabout({ setProjectView }) {
             I designed the database schema based on the needs of the project, as
             defined collaboratively by whole group, and set up the database.
           </p>
-
           <p className={styles.project_blurb}>
             I also tackled the complex SQL query that handles automated matching
             of users. I volunteered to take this on mainly because I had been

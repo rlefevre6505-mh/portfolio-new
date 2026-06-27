@@ -28,13 +28,20 @@ export default function DietDine({ setProjectView }) {
           </p>
 
           <p className={styles.project_blurb}>
-            <strong>NB. </strong> Unfortunately this app is temporarily lacking
-            functionality due to the Open Street Map API being blocked. I expect
-            to have this resolved quickly.
+            <strong>NB. </strong> This app uses a limited set of test data, so
+            covers a small range fo food outlets in Norwich, Peterborough and
+            Hull areas. Please zoom out or scroll the map to view these.
+          </p>
+          <p className={styles.project_blurb}>
+            Additionally, if any tiles showing an error code appear in the map,
+            this is due to your browser settings. You may need to temporarily
+            disable any ad-blockers to remove these, due to certain terms
+            associated with the OpenStreetMap API though the app will function
+            regardless.
           </p>
         </div>
         <a
-          href=""
+          href="https://diet-dine-client.onrender.com/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.project_link}
@@ -45,7 +52,7 @@ export default function DietDine({ setProjectView }) {
             width={500}
             height={300}
             src="/diet_dine.jpg"
-            alt="a screenshot of the kickabout app"
+            alt="a screenshot of the Diet Dine app"
           />
         </a>
       </div>
