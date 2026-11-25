@@ -109,12 +109,12 @@ export default function Kickabout({ setProjectView }) {
             a lead role in setting up authentication and designing the custom
             onboarding flow, as well as guiding user flow through the whole app.
             I designed the database schema based on the needs of the project, as
-            defined collaboratively by whole group, and set up the database.
+            defined collaboratively by the whole group, and set up the database.
           </p>
           <p className={styles.project_blurb}>
             I also tackled the complex SQL query that handles automated matching
             of users. I volunteered to take this on mainly because I had been
-            conscious that my SQL skills were not as advanced as they could be
+            conscious that my SQL at the time skills were not as advanced as they could be
             and had recently been working to improve, so wanted to challenge
             myself. I fell into the role of go-to debugger, as I not only made
             myself readily available for this, but found that I was able to work

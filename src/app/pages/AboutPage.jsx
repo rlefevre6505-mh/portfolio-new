@@ -1,5 +1,6 @@
 import styles from "./AboutPage.module.css";
 import StackIcon from "tech-stack-icons";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -19,6 +20,9 @@ export default function AboutPage() {
             <StackIcon name="css3" className={styles.stack_icon} />
             <span className={styles.tooltip}>CSS3</span>
           </div>
+
+
+
           <div className={styles.tooltip_wrapper}>
             <StackIcon name="tailwindcss" className={styles.stack_icon} />
             <span className={styles.tooltip}>Tailwind CSS</span>
@@ -36,26 +40,53 @@ export default function AboutPage() {
             <span className={styles.tooltip}>React</span>
           </div>
           <div className={styles.tooltip_wrapper}>
+            <StackIcon name="redux" className={styles.stack_icon} />
+            <span className={styles.tooltip}>Redux</span>
+          </div>
+          <div className={styles.tooltip_wrapper}>
             <StackIcon name="nextjs2" className={styles.stack_icon} />
             <span className={styles.tooltip}>Next.js</span>
-          </div>
-
-          <div className={styles.tooltip_wrapper}>
-            <StackIcon name="laravel" className={styles.stack_icon} />
-            <span className={styles.tooltip}>Laravel</span>
-          </div>
-          <div className={styles.tooltip_wrapper}>
-            <StackIcon name="postgresql" className={styles.stack_icon} />
-            <span className={styles.tooltip}>PostgreSQL</span>
-          </div>
-          <div className={styles.tooltip_wrapper}>
-            <StackIcon name="sqlite" className={styles.stack_icon} />
-            <span className={styles.tooltip}>SQLite</span>
           </div>
           <div className={styles.tooltip_wrapper}>
             <StackIcon name="nodejs" className={styles.stack_icon} />
             <span className={styles.tooltip}>Node.js</span>
           </div>
+          <div className={styles.tooltip_wrapper}>
+            <StackIcon name="postgresql" className={styles.stack_icon} />
+            <span className={styles.tooltip}>PostgreSQL</span>
+          </div>
+          <div className={styles.tooltip_wrapper}>         
+            <StackIcon name="supabase" className={styles.stack_icon} />
+            <span className={styles.tooltip}>Supabase</span>
+          </div>
+          <div className={styles.tooltip_wrapper}>         
+            <StackIcon name="vitejs" className={styles.stack_icon} />
+            <span className={styles.tooltip}>Vite</span>
+          </div>
+          <div className={styles.tooltip_wrapper}>         
+            <StackIcon name="vitest" className={styles.stack_icon} />
+            <span className={styles.tooltip}>Vitest</span>
+          </div>
+
+          <div className={styles.tooltip_wrapper}>         
+            <Image  src="/testinglibrary.png"
+              alt=" "
+              width={500}
+              height={300}
+              className={styles.stack_icon}
+               />
+            <span className={styles.tooltip}>React Testing Library</span>
+          </div>
+          <div className={styles.tooltip_wrapper}>         
+            <StackIcon name="vercel" className={styles.stack_icon} />
+            <span className={styles.tooltip}>Vercel</span>
+          </div>
+          <div className={styles.tooltip_wrapper}>         
+            <StackIcon name="github" className={styles.stack_icon} />
+            <span className={styles.tooltip}>Github</span>
+          </div>
+          
+
         </div>
 
         <p>
@@ -64,7 +95,7 @@ export default function AboutPage() {
         <p>
           I&apos;ve always enjoyed technology and had an interest in computing,
           from re-soldering the internals of a broken hand-held games console at
-          the age of 12, to learning about binary and ASCII out of curiosity. I
+          the age of 12, to learning about binary code and ASCII out of curiosity. I
           think creativity and problem solving have always been among the things
           that automatically appeal to me, and that played a big part in
           latching on to development once I started dabbling in the basics
@@ -105,12 +136,11 @@ export default function AboutPage() {
           <strong>My Current & Upcoming Projects</strong>
         </p>
         <p>
-          At the time of writing, I am nearing completion of a project for a UK
-          company, creating a logistics planning tool that allows planning of
+          At the time of writing, I am working on a project for a UK
+          business, creating a tool that allows planning of
           events, allocation of vehicles and equipment to events, and includes
           predictive warnings that flag any clashes between events or equipment
-          shortages. This is built in React with TypeScript and Redux, Node.js
-          with Express, and PostgreSQL.
+          shortages.
         </p>
       </div>
     </div>

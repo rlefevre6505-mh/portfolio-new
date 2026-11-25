@@ -57,9 +57,8 @@ export default function Home() {
             I&apos;m someone who loves translating problems into solutions by
             combining intuitive, user-friendly interfaces with clean,
             maintainable code. I&apos;m Currently focussed on building
-            functional and performant web apps from the ground up, and expanding
-            into new languages and frameworks. I&apos;m mostly working solo, but
-            enjoy developing in Agile teams!
+            functional and performant web apps from the ground up, and am hoping to find a good fit in a professional development role. I&apos;m mostly working solo, but
+            enjoy developing as part of a team!
           </p>
         </div>
         <button
