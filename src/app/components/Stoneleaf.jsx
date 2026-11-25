@@ -38,7 +38,7 @@ export default function Stoneleaf({ setProjectView }) {
             <strong>SPA Routing</strong> - React Router is used to provide
             routes to a home page, about page, shop page and checkout page,
             while each uses state management and conditional rendering to
-            control the componnets displayed within each page view.
+            control the components displayed within each page view.
           </p>
           <p className={styles.project_blurb}>
             <strong>Third Party Assets</strong> - The range slider for filtering
@@ -60,7 +60,7 @@ export default function Stoneleaf({ setProjectView }) {
             <strong>Development Notes</strong> - While developing this app I
             found challenges in some aspects of React that were relatively new
             to me, primarily utilising the context API. While this is something
-            I had looked at in ther past, this was my first implementation
+            I had looked at in the past, this was my first implementation
             context into a functioning app. Using context to provide the cart
             contents to the whole app was fairly simple, but as I building out
             the logic to manage the cart contents and refactoring parts to
@@ -76,24 +76,24 @@ export default function Stoneleaf({ setProjectView }) {
             that crashed the payment at one point due to an invalid format of
             link. Seeking assistance from the Stripe AI assistant was helpful to
             a point, but would sometimes guide me to change a setting in the
-            dashboard that only applied ot test mode, which is deprecated.
+            dashboard that only applied to test mode, which is deprecated.
           </p>
           <p className={styles.project_blurb}>
             Overall, this project was a good refresher on building with React as
             a standalone front-end library and allowed me to make use of context
             and useRef in a project for the first time. It also served as a
             refresher on project design, as although I am happy with the result,
-            having failed to takem a mobile-first approach to styling did make
+            having failed to take a mobile-first approach to styling did make
             responsive styling more of a chore than necessary. This is something
             I would definitely do differently moving forward.
           </p>
 
           <p className={styles.project_blurb}>
-            <strong>NB. </strong> to try out payment in this app, please use
-            dummy card number &quot;4242 4242 4242 4242&quot; with any name, any
-            CVC code and any future date. Unfortunately, Stripe sandbox no
-            longer allows email receipts for test transactions, so if you enter
-            your email you will not receive a receipt.
+              <strong>NB. </strong> to try out payment in this app, please use
+              dummy card number &quot;4242 4242 4242 4242&quot; with any name, any
+              CVC code and any future date. Unfortunately, Stripe sandbox no
+              longer allows email receipts for test transactions, so if you enter
+              your email you will not receive a receipt.
           </p>
         </div>
         <a

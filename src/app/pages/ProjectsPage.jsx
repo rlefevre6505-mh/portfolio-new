@@ -8,6 +8,7 @@ import Dogs from "../components/Dogs";
 import GigLog from "../components/GigLog";
 import Kickabout from "../components/Kickabout";
 import Stoneleaf from "../components/Stoneleaf";
+import TomTheShop from "../components/Tom The Shop";
 
 export default function ProjectsPage() {
   const [projectView, setProjectView] = useState("");
@@ -15,6 +16,29 @@ export default function ProjectsPage() {
   if (projectView === "") {
     return (
       <div className={styles.project_container}>
+
+        <div className={styles.project}>
+          <div className={styles.project_text}></div>
+          <h3 className={styles.project_title}>Tom The Shop Event Planner</h3>
+          <p className={styles.project_blurb}>
+            A planning tool for the UK&apos;s number one mobile general stores provider for festivals and outdoor events, for scheduling of events and allocation of resources to each event, that flags any clashes in resource allocation or equipment shortages.
+          </p>
+          <div
+            className={styles.link}
+            onClick={() => {
+              setProjectView("tts");
+            }}
+          >
+            View details
+            <Image
+              src="/tts.jpg"
+              alt="a screenshot of the diet dine app"
+              width={500}
+              height={300}
+            />
+          </div>
+        </div>
+        
         <div className={styles.project}>
           <div className={styles.project_text}>
             <h3 className={styles.project_title}>Stoneleaf Furnishings</h3>
@@ -22,7 +46,7 @@ export default function ProjectsPage() {
               A front-end e-commerce storefront with custom payment server,
               built with Vite + React, Node.JS + Express, and Stripe checkout.
               Designed to be fast and scalable, this app recreates a real-world
-              transactional flow, handles payemnts securely and demostrates
+              transactional flow, handles payments securely and demonstrates
               ability to create production-ready web apps.
             </p>
           </div>
@@ -49,7 +73,7 @@ export default function ProjectsPage() {
               A full stack app created for a group bootcamp project and built
               with Vite + Next.JS, Node.JS + Express, and using a PostgreSQL
               database on Supabase. Designed to help users connect with each
-              other to play sports on a purely casual level, wih
+              other to play sports on a purely casual level, with
               preference-based match-making.
             </p>
           </div>
@@ -203,5 +227,7 @@ export default function ProjectsPage() {
     return <Cookies setProjectView={setProjectView} />;
   } else if (projectView === "stoneleaf") {
     return <Stoneleaf setProjectView={setProjectView} />;
+  } else if (projectView === "tts") {
+    return <TomTheShop setProjectView={setProjectView} />;
   }
 }
