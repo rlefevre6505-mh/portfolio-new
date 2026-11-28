@@ -20,12 +20,13 @@ export default function AboutPage() {
             <StackIcon name="css3" className={styles.stack_icon} />
             <span className={styles.tooltip}>CSS3</span>
           </div>
-
-
-
           <div className={styles.tooltip_wrapper}>
             <StackIcon name="tailwindcss" className={styles.stack_icon} />
             <span className={styles.tooltip}>Tailwind CSS</span>
+          </div>
+          <div className={styles.tooltip_wrapper}>
+            <StackIcon name="sass" className={styles.stack_icon} />
+            <span className={styles.tooltip}>SASS (SCSS)</span>
           </div>
           <div className={styles.tooltip_wrapper}>
             <StackIcon name="js" className={styles.stack_icon} />

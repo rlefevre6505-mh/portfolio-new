@@ -48,8 +48,8 @@ export default function Home() {
             <div className={styles.intro_text}>
               <h2>Hello World!</h2>
               <h3>
-                I&apos;m Richard, a <br />
-                full-stack developer.
+                I&apos;m Richard,<br />
+                a web and software developer.
               </h3>
             </div>
           </div>

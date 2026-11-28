@@ -191,6 +191,7 @@ body {
 .nav_link_active {
   font-weight: 600;
   border-bottom: none;
+  box-shadow: 0 0 16px rgba(128, 145, 159, 0.3);
 }
 
 /* .nav_link_active {
@@ -363,5 +364,13 @@ body {
   .nav_link {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (width < 800px) {
+    .profile {
+        .profile_blurb {
+            max-width: 100%
+        }
   }
 }
