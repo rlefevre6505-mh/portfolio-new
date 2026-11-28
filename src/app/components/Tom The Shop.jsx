@@ -14,7 +14,7 @@ export default function TomTheShop({ setProjectView }) {
       </button>
       <div className={styles.project}>
         <div className={styles.project_text}>
-          <h3 className={styles.project_title}>Tom The Shop Event Planner</h3>
+          <h3 className={styles.project_title}>Tom The Shop Planner</h3>
           <p className={styles.project_blurb}>
             <strong>A planning tool for the UK&apos;s number one mobile general stores provider for festivals and outdoor events. This application facilitates scheduling of events and allocation of resources to each event, and includes an algorithmic clash detector that flags any clashes between resource allocation at overlapping events to users, as well as other issues such as the wrong number of vehicles or shop units allocated. Users are automatically warned of vehicles or shop units being incorrectly allocated to overlapping events, shortages of crucial equipment or the lack of a suitable vehicle for towing certain shop units, thereby avoiding business critical errors ahead of time.
               </strong></p>

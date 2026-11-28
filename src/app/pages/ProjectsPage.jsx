@@ -19,9 +19,9 @@ export default function ProjectsPage() {
 
         <div className={styles.project}>
           <div className={styles.project_text}></div>
-          <h3 className={styles.project_title}>Tom The Shop Event Planner</h3>
+          <h3 className={styles.project_title}>Tom The Shop Planner</h3>
           <p className={styles.project_blurb}>
-            A planning tool for the UK&apos;s number one mobile general stores provider for festivals and outdoor events, for scheduling of events and allocation of resources to each event, that flags any clashes in resource allocation or equipment shortages.
+            A planning tool for the UK&apos;s number one mobile general stores provider for festivals and outdoor events, for scheduling and allocation of resources to events, that mitigates risks to the business by flagging any clashes in resource allocation or equipment shortages.
           </p>
           <div
             className={styles.link}
